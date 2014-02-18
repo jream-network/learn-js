@@ -1,0 +1,6 @@
+JSON:   JavaScript Object Notation
+
+DOM:    Document Object Model
+        Tree of HTML Nodes
+
+Traversal: Moving up/down the DOM (Like a tree)

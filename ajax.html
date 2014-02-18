@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learn JS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <script>
+    $(function() {
+
+        // $.get('ajax/call.php?name=Jesse', function(resp) {
+        //     alert(resp);
+        // });
+
+        // var data = {name: 'Benny'};
+        // $.post('ajax/call.php', data, function(resp) {
+        //     console.log(resp.name);
+        // }, 'json');
+
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            url: 'ajax/call.php',
+            data: {name: 'Smith'},
+            success: function(resp, txt, xhr) {
+                console.log(resp.name);
+            },
+            error: function() {
+
+            }
+        });
+
+    });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
